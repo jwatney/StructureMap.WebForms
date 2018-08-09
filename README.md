@@ -33,7 +33,7 @@ using System.Web;
 using StructureMap;
 using StructureMap.WebForms;
 
-namespace WebApplication3 {
+namespace MyApplication {
   public class Global : HttpApplication {
     void Application_Start(object sender, EventArgs e) {
       var container = new Container(config => {

@@ -5,11 +5,12 @@
     <version>0.2.0</version>
     <title>StructureMap.WebForms</title>
     <authors>Jonathon Watney</authors>
-    <owners>$author$</owners>
+    <owners>Jonathon Watney</owners>
+    <projectUrl>https://github.com/jwatney/StructureMap.WebForms</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Adds StructureMap as the dependency resolver for WebForms.</description>
     <releaseNotes>Accept an IContainer instance.</releaseNotes>
-    <copyright>Copyright © Jonathon Watney 2018</copyright>
+    <copyright>Copyright © 2018</copyright>
     <tags>structuremap webforms</tags>
     <dependencies>
       <dependency id="StructureMap" version="4.7"/>

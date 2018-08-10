@@ -36,6 +36,7 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AspNetControlConvention.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StructureMapServiceProvider.cs" />
     <Compile Include="StructureMapWebForms.cs" />

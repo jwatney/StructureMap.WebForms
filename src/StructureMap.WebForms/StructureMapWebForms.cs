@@ -11,7 +11,7 @@ namespace StructureMap.WebForms {
   public static class StructureMapWebForms {
     internal static IContainer Container { get; private set; }
 
-    public static void ConfigureServices(IContainer container) {
+    public static void RegisterServices(IContainer container) {
       Container = container;
       HttpRuntime.WebObjectActivator = new StructureMapServiceProvider(Container);
     }

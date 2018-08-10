@@ -5,7 +5,7 @@ This repository contains the source of one NuGet package:
 
  - StructureMap.WebForms
 
-These packages provide integration with ASP.NET WebForms in .NET Framework 4.7.2.
+This packages provides integration with ASP.NET WebForms in .NET Framework 4.7.2.
 
 ## StructureMap.Webforms
 
@@ -37,7 +37,12 @@ namespace MyApplication {
   public class Global : HttpApplication {
     void Application_Start(object sender, EventArgs e) {
       var container = new Container(config => {
-        // Do lots of configuration...
+        c.Scan(scan => {
+          scan.TheCallingAssembly(); // Or whatever assembly has your controls.
+          scan.With(new AspNetControlConvention()); // Registers those controls with the container.
+        });
+
+        // Do more configuration.
       });
 
       StructureMapWebForms.RegisterServices(container);

@@ -23,7 +23,7 @@ Add `StructureMap.WebForms` to your project:
 
 ### Usage
 
-The package contains a single, public extension method, `Populate`.
+The package contains a static method `RegisterServices` receiving a configured container to register with `HttpRuntime.WebObjectActivator`.
 
 #### Example
 
@@ -41,6 +41,9 @@ namespace MyApplication {
           scan.TheCallingAssembly(); // Or whatever assembly has your controls.
           scan.With(new AspNetControlConvention()); // Registers those controls with the container.
         });
+
+        // Add the lifecycle policy so unregistered controls created by the container are always unique.
+        c.Policies.Add(new AspNetControlLifecyclePolicy());
 
         // Do more configuration.
       });

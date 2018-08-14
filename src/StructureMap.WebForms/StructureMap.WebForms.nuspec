@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>StructureMap.WebForms</id>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
     <title>StructureMap.WebForms</title>
     <authors>Jonathon Watney</authors>
     <owners>Jonathon Watney</owners>
     <projectUrl>https://github.com/jwatney/StructureMap.WebForms</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Adds StructureMap as the dependency resolver for WebForms.</description>
-    <releaseNotes>Added AspNetControlConvention.</releaseNotes>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright © 2018</copyright>
     <tags>structuremap webforms</tags>
     <dependencies>

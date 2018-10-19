@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>StructureMap.WebForms</id>
-    <version>0.4.0</version>
+    <version>0.4.2</version>
     <title>StructureMap.WebForms</title>
     <authors>Jonathon Watney</authors>
     <owners>Jonathon Watney</owners>
